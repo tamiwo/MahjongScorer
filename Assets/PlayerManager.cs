@@ -26,4 +26,5 @@ public class PlayerManager : MonoBehaviour {
     public void SetName( string name ) {
         _name.text = name;
     }
+    
 }
