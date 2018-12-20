@@ -24,4 +24,17 @@ public class NameManager : MonoBehaviour {
 	void Update () {
 		
 	}
-}
+
+    public void SetName(int id, string str) {
+        var old = _playerMng[id].GetName();
+        Debug.Log(id + ":" + str);
+        _playerMng[id].SetName(str);
+        for (int i = 0; i < 4; i++) {
+            if (i == id) continue;
+            if ( _playerMng[i].GetName() == str ) {
+                _playerMng[i].SetName(old);
+                break;
+            }
+        }
+    }
+}

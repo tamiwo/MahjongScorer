@@ -370,6 +370,21 @@ Prefab:
       propertyPath: m_Name
       value: Player4Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 433337365}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b35382fa3a8d417d8834495243ebc9f, type: 2}
   m_IsPrefabAsset: 0
@@ -1337,6 +1352,11 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 433337365}
     - target: {fileID: 1646615906329436, guid: 1b35382fa3a8d417d8834495243ebc9f, type: 2}
       propertyPath: m_Name
       value: Player1Panel
@@ -1671,6 +1691,21 @@ Prefab:
       propertyPath: m_Name
       value: Player2Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 433337365}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b35382fa3a8d417d8834495243ebc9f, type: 2}
   m_IsPrefabAsset: 0
@@ -1987,6 +2022,21 @@ Prefab:
     - target: {fileID: 1646615906329436, guid: 1b35382fa3a8d417d8834495243ebc9f, type: 2}
       propertyPath: m_Name
       value: Player3Panel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 433337365}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 114313199285214994, guid: 1b35382fa3a8d417d8834495243ebc9f,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1b35382fa3a8d417d8834495243ebc9f, type: 2}

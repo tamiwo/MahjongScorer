@@ -8,6 +8,7 @@ public class NameListPanelManager : MonoBehaviour {
     public GameObject nameManager;
 
     private Text[] _names;
+    private int _id;
 
     private void Awake() {
         _names = new Text[4];
@@ -29,4 +30,13 @@ public class NameListPanelManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void SetActive(int id){
+        _id = id;
+        gameObject.SetActive(true);
+    }
+
+    public void SetName(string str) {
+        nameManager.GetComponent<NameManager>().SetName(_id, str);
+    }
 }
