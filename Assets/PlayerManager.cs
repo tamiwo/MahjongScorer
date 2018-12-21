@@ -7,11 +7,13 @@ public class PlayerManager : MonoBehaviour {
 
     private Text _score;
     private Text _name;
+    private Text _wind;
 
     // Use this for initialization
     void Awake () {
         _score = transform.Find("ScorePanel").Find("Score").gameObject.GetComponent<Text>();
         _name = transform.Find("NameButton").Find("Name").gameObject.GetComponent<Text>();
+        _wind = transform.Find("WindButton").Find("Wind").gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -30,5 +32,16 @@ public class PlayerManager : MonoBehaviour {
     public string GetName(){
         return _name.text;
     }
-    
+
+    public void SetWind(string wind)
+    {
+        _wind.text = wind;
+        Debug.Log(wind);
+    }
+
+    public string GetWind()
+    {
+        return _wind.text;
+    }
+
 }
