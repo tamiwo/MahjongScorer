@@ -6,14 +6,18 @@ public class ScoreManager : MonoBehaviour {
 
     public GameObject[] players;
     public int startScore;
+    public GameObject centerPanel;
 
     PlayerManager[] _playerMng;
+    CenterPanelManager _centerPanelMng;
     int[] _scores;
     bool[] _isRiich;
+    int _riichCount=0;
 
     void Start()
     {
         _playerMng = new PlayerManager[players.Length];
+        _centerPanelMng = centerPanel.GetComponent<CenterPanelManager>();
         _scores = new int[players.Length];
         _isRiich = new bool[players.Length];
         var i = 0;
@@ -32,9 +36,11 @@ public class ScoreManager : MonoBehaviour {
     public void Riich(int id) {
         if (_isRiich[id] == false) {
             SetScore(id, _scores[id] - 1000);
+            _centerPanelMng.SetRiichBar(++_riichCount);
         }
         else {
             SetScore(id, _scores[id] + 1000);
+            _centerPanelMng.SetRiichBar(--_riichCount);
         }
         _isRiich[id] = !_isRiich[id];
     }
