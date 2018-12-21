@@ -9,12 +9,13 @@ public class ScoreManager : MonoBehaviour {
 
     PlayerManager[] _playerMng;
     int[] _scores;
-
+    bool[] _isRiich;
 
     void Start()
     {
         _playerMng = new PlayerManager[players.Length];
         _scores = new int[players.Length];
+        _isRiich = new bool[players.Length];
         var i = 0;
         foreach (GameObject p in players) {
             _playerMng[i] = p.GetComponent<PlayerManager>();
@@ -28,7 +29,13 @@ public class ScoreManager : MonoBehaviour {
         _playerMng[id].SetScore(score);
     }
 
-    void Riich(int id) {
-        SetScore(id, _scores[id] - 1000);
+    public void Riich(int id) {
+        if (_isRiich[id] == false) {
+            SetScore(id, _scores[id] - 1000);
+        }
+        else {
+            SetScore(id, _scores[id] + 1000);
+        }
+        _isRiich[id] = !_isRiich[id];
     }
 }
