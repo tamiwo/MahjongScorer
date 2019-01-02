@@ -12,7 +12,7 @@ public class ScoreManager : MonoBehaviour {
     CenterPanelManager _centerPanelMng;
     int[] _scores;
     bool[] _isRiich;
-    int _riichCount=0;
+    public int riichCount=0;
 
     void Start()
     {
@@ -36,11 +36,11 @@ public class ScoreManager : MonoBehaviour {
     public void Riich(int id) {
         if (_isRiich[id] == false) {
             SetScore(id, _scores[id] - 1000);
-            _centerPanelMng.SetRiichBar(++_riichCount);
+            _centerPanelMng.SetRiichBar(++riichCount);
         }
         else {
             SetScore(id, _scores[id] + 1000);
-            _centerPanelMng.SetRiichBar(--_riichCount);
+            _centerPanelMng.SetRiichBar(--riichCount);
         }
         _isRiich[id] = !_isRiich[id];
     }
